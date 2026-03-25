@@ -1,5 +1,12 @@
 from logging.config import fileConfig
 
+
+import sys
+from os.path import abspath, dirname
+
+# Nambahin root directory ke sys.path
+# sys.path.insert(0, dirname(dirname(abspath(__file__))))
+
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
@@ -7,6 +14,7 @@ from alembic import context
 from app.core.config_db import db_settings
 from app.db.database import Base
 from app.model.jobs import Job 
+
 
 config = context.config
 

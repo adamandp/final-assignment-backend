@@ -1,10 +1,9 @@
-from services.jobs.jobs_service import JobService
-from fastapi import Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from fastapi import Depends
-from sqlalchemy.orm import Session
-from db.database import SessionLocal
 from typing import Generator
+
+from app.services.jobs.jobs_service import JobService
+from app.db.database import SessionLocal
 
 def get_db() -> Generator[Session, None, None]:
     db = SessionLocal()

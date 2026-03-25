@@ -1,0 +1,24 @@
+# Python bytecode
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Environment & Local settings
+.env
+.venv
+venv/
+env/
+.vscode/
+.git
+.gitignore
+.DS_Store
+**/.DS_Store
+
+# Data temp & logs
+app/temp/*.fif
+*.log
+
+# Build artifacts
+dist/
+build/

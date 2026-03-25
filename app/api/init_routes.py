@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from api.routes import (
+from app.api.routes import (
     health_check,
     jobs
 )
